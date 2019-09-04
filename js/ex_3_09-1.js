@@ -12,7 +12,7 @@ const appleQuntityNumber = Number.parseFloat(appleQuntity);
 const orangeQuntityNumber = Number.parseFloat(orangeQuntity);
 
 totalWeight = appleQuntityNumber + orangeQuntityNumber;
-cost =  applePriceNumber * appleQuntityNumber
+cost = applePriceNumber * appleQuntityNumber
   + orangePriceNumber * orangeQuntityNumber;
 
 console.log(`Total wight: ${totalWeight}kg. Cost: ${cost}$`);
@@ -20,10 +20,11 @@ console.log(`Total wight: ${totalWeight}kg. Cost: ${cost}$`);
 console.assert(totalWeight === 2.6, 'Error in weight calculation');
 
 totalWeight = (appleQuntityNumber * 100 + orangeQuntityNumber * 100) / 100;
-cost =  applePriceNumber * appleQuntityNumber
+cost = applePriceNumber * appleQuntityNumber
   + orangePriceNumber * orangeQuntityNumber;
 
 console.log(`Total wight: ${totalWeight}kg. Cost: ${cost}$`);
+
 
 // =============== Задача дня ================
 // Есть цены за килограмм и количество килограмм для двух продуктов.
