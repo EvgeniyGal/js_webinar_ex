@@ -11,17 +11,11 @@ const orangePriceNumber = Number.parseFloat(orangePrice);
 const appleQuntityNumber = Number.parseFloat(appleQuntity);
 const orangeQuntityNumber = Number.parseFloat(orangeQuntity);
 
-totalWeight = appleQuntityNumber + orangeQuntityNumber;
-cost = applePriceNumber * appleQuntityNumber
-  + orangePriceNumber * orangeQuntityNumber;
-
-console.log(`Total wight: ${totalWeight}kg. Cost: ${cost}$`);
-
-console.assert(totalWeight === 2.6, 'Error in weight calculation');
-
 totalWeight = (appleQuntityNumber * 100 + orangeQuntityNumber * 100) / 100;
 cost = applePriceNumber * appleQuntityNumber
-  + orangePriceNumber * orangeQuntityNumber;
++ orangePriceNumber * orangeQuntityNumber;
+
+console.assert(totalWeight === 2.6, 'Error in weight calculation');
 
 console.log(`Total wight: ${totalWeight}kg. Cost: ${cost}$`);
 

@@ -19,13 +19,19 @@ function toHEXColour(redComponent, greenComponent, blueComponent) {
   return `#${fixLeadZero(Number(redComponent).toString(16))}${fixLeadZero(Number(greenComponent).toString(16))}${fixLeadZero(Number(blueComponent).toString(16))}`;
 }
 
+console.assert(toHEXColour(2, 255, 14) === '#02ff0e', 'Some thing vrong with HEX');
+
 function toRGBColour(redComponent, greenComponent, blueComponent) {
   return `rgb(${redComponent}, ${greenComponent}, ${blueComponent})`;
 }
 
+console.assert(toRGBColour(2, 255, 14) === 'rgb(2, 255, 14)', 'Some thing vrong with RGB');
+
 function toPercentColour(redComponent, greenComponent, blueComponent) {
   return `rgb(${Math.round(((redComponent / 255) * 100))}%, ${Math.round(((greenComponent / 255) * 100))}%, ${Math.round(((blueComponent / 255) * 100))}%)`;
 }
+
+console.assert(toPercentColour(2, 255, 14) === 'rgb(1%, 100%, 5%)', 'Some thing vrong with persentege');
 
 const hex = toHEXColour(red, green, blue);
 const rgb = toRGBColour(red, green, blue);
